@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: transparent;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        font-family: Arial, sans-serif;
+    }
+
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .box h2 {
+        margin: 0;
+    }
+
+    .inputbox {
+        margin: 20px 0;
+    }
+
+    .inputbox input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .link a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+        /* Define styles for smaller screens here */
+        .box {
+            width: 80%;
+        }
+    }
+    </style>
+</head>
+<body> 
+    <video autoplay loop muted>
+        <source src="xyz.mp4.webm" type="video/webm"> 
+    </video>
+    <div class="box">
+    <span class="borderline"></span>
+    <form action="Connect.php" method="post">
+    <h2>Sign in</h2>
+    <div class="inputbox">
+    <input type="text" required="required" name="Username">
+    <span>Username</span>
+    <i></i>
+    </div>
+    <div class="inputbox">
+        <input type="password" required="required" name="Passward">
+        <span>Passward</span>
+        <i></i>
+        </div>
+
+    <div class="link">
+        <a href="Forget.html">Forget Passward</a>
+        <a href="SignUP.html">Sign up</a>
+    </div> 
+    <input type="submit" value="Login">
+    </form>
+    </div>
+</body>
+</html>
